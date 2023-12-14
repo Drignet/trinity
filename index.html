@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trinity Academy</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>WAEC 2023/2024 ONLINE REGISTRATION FORM</h1>
+      </header>
+      <div class="profile-pix" id="selected-image">
+        <img src="./src/assets/waec-logo.png" width="100" height="100" />
+        <label for="file">choose</label>
+        <input type="file" id="file" accept="image/*">
+      <input type="file" id="file" accept="image/*" capture="camera">
+      </div>
+      
+    <main>
+      <form>
+        <div class="form-grp required">
+          <label for="surname">surname</label>
+          <input type="text" id="surname">
+        </div>
+        <div class="form-grp required">
+          <label for="firstname">firstname</label>
+          <input type="text" id="firstname">
+        </div>
+        <div class="form-grp">
+          <label for="lastname">lastame</label>
+          <input type="text" id="lastname">
+        </div>
+        <div class="form-grp required">
+          <label for="state">state</label>
+          <input type="text" id="state">
+        </div>
+        <div class="form-grp required">
+          <label for="lga">l.g.a</label>
+          <input type="text" id="lga">
+        </div>
+        <div class="form-grp required">
+          <label for="phone">phone number</label>
+          <input type="text" inputmode="numeric" id="phone">
+        </div>
+        <div class="form-grp required">
+          <label for="dob">date of birth</label>
+          <input type="text" onfocus="(this.type='date')" onfocusout="(this.type='text')" id="dob" value="1986-02-24">
+        </div>
+        <div class="form-grp required">
+          <label for="sex">sex</label>
+          <select id="sex">
+            <optgroup label="sex">
+              <option>Male</option>
+              <option>Female</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="form-grp required">
+          <label for="nin">nin number</label>
+          <input type="text" inputmode="numeric" id="nin">
+        </div>
+        <h2>subjects</h2>
+        <small>choose only nine(9) subjects</small>
+        <div class="form-grp subject-grp">
+          <label for="english">English Language</label>
+          <input type="checkbox" id="checkbox" value="English Language" name="subject">
+        </div>
+        <div class="form-grp subject-grp">
+          <label for="fmaths">General Mathematics</label>
+          <input type="checkbox" id="fmaths" value="General Mathematics" name="subject">
+        </div>
+        <div class="form-grp subject-grp">
+          <label for="physics">physics</label>
+          <input type="checkbox" id="physics" value="physics" name="subject">
+        </div>
+        <div class="form-grp subject-grp">
+          <label for="chemistry">chemistry</label>
+          <input type="checkbox" id="chemistry" value="Chemistry" name="subject">
+        </div>
+        <div class="form-grp subject-grp">
+          <label for="igbo">igbo Language</label>
+          <input type="checkbox" id="igbo" value="Igbo Language" name="subject">
+        </div>
+        <div class="form-grp subject-grp">
+          <label for="civic">civic education</label>
+          <input type="checkbox" id="civic" value="Civic Education" name="subject">
+        </div>
+         <div class="form-grp subject-grp">
+          <label for="economics">Economics</label>
+          <input type="checkbox" id="economics" value="Economics" name="subject">
+        </div>
+        <div class="form-grp subject-grp">
+          <label for="biology">biology</label>
+          <input type="checkbox" id="biology" value="Biology" name="subject">
+        </div>
+        <div class="form-grp subject-grp">
+          <label for="marketing">marketing</label>
+          <input type="checkbox" id="marketing" value="Marketing" name="subject">
+        </div>
+        <div class="form-grp subject-grp">
+          <label for="fmaths">Further Mathematics</label>
+          <input type="checkbox" id="fmaths" value="Further Mathematics" name="subject">
+        </div>
+         <div class="form-grp subject-grp">
+          <label for="govt">government</label>
+          <input type="checkbox" id="govt" value="Government" name="subject">
+        </div>
+        <div class="form-grp subject-grp">
+          <label for="commerce">commerce</label>
+          <input type="checkbox" id="commerce" value="Commerce" name="subject">
+        </div>
+        <div class="form-grp subject-grp">
+          <label for="crs">crs</label>
+          <input type="checkbox" id="crs" value="CRS" name="subject">
+        </div>
+        <div class="form-grp subject-grp">
+          <label for="lit">lit. in English</label>
+          <input type="checkbox" id="lit" value="Literature in English" name="subject">
+        </div>
+      </form>
+      <div class="text">Hello</div>
+      <button type="submit" id="regBtn">Register</button>
+    </main>
+    
+    </div>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>

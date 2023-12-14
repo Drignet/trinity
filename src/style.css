@@ -1,0 +1,154 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Roboto, "Times New Roman", Sans-Serif;
+  text-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  background: url("./assets/waec-logo.png") repeat;
+  background-position: center center;
+  background-size: 50px;
+  webkit-background-size: 50px;
+}
+
+.wrapper{
+  padding-inline: 1em;
+  background: rgba(0,0,212,0.1);
+}
+
+header{
+  text-align: center;
+  font-size: 1rem;
+  margin-block: 1em;
+  color: gold;
+  background: #222;
+  padding: 0.5em 0.2em;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.profile-pix{
+  display: grid;
+  place-items: center;
+  margin-bottom: 1em;
+}
+
+.profile-pix img{
+  border:2px solid #222;
+  width: 140px;
+  height: 160px;
+}
+
+.profile-pix input{
+  display: none;
+}
+
+.profile-pix label{
+  background: #ccc;
+  border: 2px solid #222;
+  border-radius: 6px;
+  margin-top: 0.2em;
+  padding: 0.2em 0.4em;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+main{
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  gap: 2em;
+  border: 1px solid rgba(0,0,0,0.25);
+  border-radius: 10px;
+  padding-inline: 0.2em;
+}
+
+form{
+  display: table;
+}
+
+.form-grp{
+  display: table-row;
+}
+
+.form-grp input, label, select{
+  display: table-cell;
+}
+
+label{
+  text-transform: uppercase;
+  font-size: 1rem;
+  text-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  opacity: 0.7;
+}
+
+.required label::before{
+  content: "*";
+  color: rgb(250,0,0)
+}
+
+.form-grp input:not([type="checkbox"]), select{
+  background: rgba(0,0,160,0.1);
+  height: 40px;
+  border-radius: 10px;
+  margin-top: 10px;
+  border: none;
+  padding: 0.2em 0 0.2em 0.5em;
+  font-size: 1rem;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border: 1px solid gold;
+  outline: none;
+}
+
+h2{
+  margin: 1.5em 0 0.5em 0;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+small{
+  color: rgba(0,255,0,0.7);
+  background: black;
+  padding: 0.2em;
+  border-radius: 6px 6px 0 0;
+}
+
+.subject-grp{
+  background: rgba(0,0,169,0.1);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.subject-grp input{
+  margin: 1em 0 1em 80%;
+  transform: scale(1.5);
+  background: gold;
+}
+
+.subject-grp label{
+  padding-left: 0.5em;
+  white-space: nowrap;
+  height:40px;
+}
+
+.subject-grp:hover{
+  background: rgba(0,0,0,1);
+  color: #fff;
+}
+
+
+#regBtn{
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+  padding: 0.4em 2em;
+  background: rgba(0,0,200,0.6);
+  color: #fff;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+#regBtn:hover{
+  background: rgba(0,0,0,1);
+}
